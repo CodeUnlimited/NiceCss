@@ -1,40 +1,61 @@
-.container {
+html, body {
+  vertical-align: bottom;
+  height: 100%;
+  width:auto;
+  vertical-align: bottom;
+  
+  padding: 0;
+}
+
+ /* Map takes 50% of window size */
+.map50 {
+  vertical-align: baseline;
+  height: 50%;
+  width:100%;
+}
+
+.content {
   display: inline-block;
   padding: 30px;
-  background-color: indianred;
+  background-color: lightgrey;
   position: relative;
 }
 
-
-.container:after {
+.content:after {
   content: '';
   display: block;
   position: absolute;
   top: 100%;
   bottom: calc(50%-10px );
   border: 10px solid transparent;
-  border-top-color: indianred;
+  border-top-color: lightgrey;
 }
-
 
 #Title {
-    margin-bottom:20px !important;
+  font-size: 2.3em;
+  margin-bottom:20px !important;
 }
-ul li, ol ul li {
-    background: none;
+
+#SubTitle {
+  font-size: 1.7em;
+  margin-bottom:20px !important;
 }
-img {
+
+#SmallTitle {
+  font-size: 1.3em;
+  margin-bottom:20px !important;
+}
+ 
+.img {
     max-width: 100%;
+    background-color: transparent;
 }
 p {
-    margin: 0px 0px 10px;
+    margin: 10px 10px 10px;
     padding: 0px;
-    color: #333333;
+    color: #444444;
 }
-dd {
-    margin-left:20px;
-    padding-bottom: 10px;
-}
+ 
 a {
     color: rgb(41, 113, 52);
     cursor: pointer;
